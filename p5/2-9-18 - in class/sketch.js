@@ -13,9 +13,9 @@ function draw() {
     background(0);
     stroke(5);
     fill(0, 0, 255);
-    rect(x, 100, 50, 50);
+    rect(x, 100, 50, 50);/*
     if (flipit == true) {
-        x = x + 1;
+        x = x + 1;/*
         if (x >= 550) {
             flipit = false;
         }
@@ -25,5 +25,5 @@ function draw() {
     }
     if (flipit == false) {
         x = x - 1;
-    }
+    }*/
 }

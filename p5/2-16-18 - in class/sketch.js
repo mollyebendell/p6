@@ -6,7 +6,7 @@ var flipit = true;
 function setup() {
   // put setup code here
     createCanvas(600, 600);
-    frameRate(30);
+    frameRate(100); //speed
 }
 function draw() {
     // put drawing code here
@@ -16,14 +16,14 @@ function draw() {
     rect(x, 100, 50, 50);
     if (flipit == true) {
         x = x + 1;
-        if (x >= 550) {
+        if (x >= 500) {
             flipit = false;
-        }
-        if (x <= 50) {
-            flipit = true;
         }
     }
     if (flipit == false) {
         x = x - 1;
+        if (x <= 50) {
+            flipit = true;
+        }
     }
 }
