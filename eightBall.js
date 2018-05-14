@@ -59,11 +59,11 @@ function setGradient(x, y, w, h, c1, c2, axis) {
 }
 
 function shakeIt() {
-    if (mouseX == pmouseX && timer < 500) {
+    if (mouseX == pmouseX && timer < 1500) {
         timer = timer + 0;
     }
     else {
-        timer = timer + 5;
+        timer = timer + 1;
     }
 
     if (timer < 100) {
